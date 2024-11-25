@@ -1,14 +1,232 @@
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
- 
-    body {
-        background: url('https://th.bing.com/th/id/R.8774cfffdab847aad3e5c4e25a28126e?rik=KSf1Xnehu9Ji6A&pid=ImgRaw&r=0') no-repeat center center/cover;
-        height: 100vh;
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        color: white; /* Ajuste a cor do texto para contrastar com o fundo */
+
+html, body {
+    height: 100%; /* Garantir que o body ocupe 100% da altura da tela */
+}
+
+body {
+    background-color: #50657f; /* Cor de fundo cinza claro */
+    color: rgb(0, 0, 0); /* Texto em um tom mais escuro para contraste */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Faz o conteúdo ocupar toda a tela */
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #403e3e;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+.botao {
+    display: inline-block;
+    padding: 20px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; 
+    background-color: #f7c774; 
+    border: none;
+    border-radius: 30px; 
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #f5b947; 
+    transform: scale(1.05); 
+}  
+
+/* Sobre mim */
+.sobre-mim {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    background-color: #50657f; /* Fundo branco para a seção sobre mim */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+}
+
+.sobre-mim .foto img {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sobre-mim .descricao {
+    max-width: 1000px;
+    margin-left: 50px;
+}
+
+.sobre-mim h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+.sobre-mim p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* Habilidades técnicas */
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.habilidades h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.habilidades ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.habilidades .tecnicas ul,
+.habilidades .softskills ul {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Projetos */
+.projetos {
+    padding: 50px;
+    background-color: #50657f;
+}
+
+.projetos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.projeto {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projeto img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.projeto-descricao h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.projeto-descricao p {
+    font-size: 1.5rem;
+}
+
+/* Contato */
+.contato {
+    padding: 50px;
+    background-color: #50657f;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contato label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contato button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #45a049;
+}
+
+.mensagem-enviada {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4CAF50;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e3047;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Empurra o rodapé para o final da tela */
+}
+
+/* Esconder mensagens */
+.hidden {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+    }
+
+    .sobre-mim h2,
+    .habilidades h2,
+    .contato h2,
+    .projetos h2 {
+        font-size: 1.5rem; /* Reduz os títulos para telas muito pequenas */
+    }
+
+    .sobre-mim p,
+    .projeto-descricao p {
+        font-size: 0.9rem; /* Texto menor para telas menores */
+    }
 }

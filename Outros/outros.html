@@ -3,10 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tecnologias em Destaque</title>
     <link rel="stylesheet" href="estilooutros.css">
 </head>
 <body>
-    
+    <a href="../index.html" class="botao">Voltar</a>
+
+    <h1 class="title">Tecnologias em Destaque</h1>
+    <div class="container">
+        <!-- Cibersegurança -->
+        <div class="card" onclick="expandCard('ciberseguranca')">
+            <img src="../imagens/ciber.png" alt="Cibersegurança">
+            <h2>Cibersegurança</h2>
+            <p>Proteção de dados e sistemas contra ataques digitais.</p>
+        </div>
+        <div id="ciberseguranca" class="modal">
+            <span class="modal-close" onclick="closeModal()">×</span>
+            <img src="../imagens/ciber.png" alt="Cibersegurança">
+            <p>
+                Cibersegurança é a área responsável pela proteção de sistemas, redes e dados contra ataques cibernéticos. 
+                Com o aumento das ameaças digitais, como malwares e phishing, essa disciplina tornou-se essencial para organizações e indivíduos. 
+                Ela utiliza práticas como criptografia, firewalls e monitoramento para garantir a confidencialidade, integridade e disponibilidade das informações.
+            </p>
+        </div>
+
+        <!-- Blockchain -->
+        <div class="card" onclick="expandCard('blockchain')">
+            <img src="../imagens/block.png" alt="Blockchain">
+            <h2>Blockchain</h2>
+            <p>Registros descentralizados e seguros.</p>
+        </div>
+        <div id="blockchain" class="modal">
+            <span class="modal-close" onclick="closeModal()">×</span>
+            <img src="../imagens/block.png" alt="Blockchain">
+            <p>
+                Blockchain é uma tecnologia que possibilita registros descentralizados e imutáveis de transações. 
+                Ela é usada para garantir transparência e segurança, especialmente em criptomoedas como Bitcoin. 
+                Seus dados são armazenados em blocos interligados, evitando alterações não autorizadas e eliminando intermediários em processos como pagamentos e contratos inteligentes.
+            </p>
+        </div>
+
+        <!-- Automação e Robótica -->
+        <div class="card" onclick="expandCard('automacao')">
+            <img src="../imagens/robotica.png" alt="Automação e Robótica">
+            <h2>Automação e Robótica</h2>
+            <p>Eficiência com robôs e sistemas automáticos.</p>
+        </div>
+        <div id="automacao" class="modal">
+            <span class="modal-close" onclick="closeModal()">×</span>
+            <img src="../imagens/robotica.png" alt="Automação e Robótica">
+            <p>
+                A automação e a robótica são áreas que desenvolvem sistemas capazes de executar tarefas de forma autônoma. 
+                De linhas de produção industriais a robôs cirúrgicos, essas tecnologias aumentam a eficiência e reduzem custos. 
+                Elas têm grande impacto em setores como saúde, transporte e manufatura, promovendo avanços na qualidade e produtividade.
+            </p>
+        </div>
+
+        <!-- Edge Computing -->
+        <div class="card" onclick="expandCard('edge')">
+            <img src="../imagens/edgecomputing.png" alt="Edge Computing">
+            <h2>Edge Computing</h2>
+            <p>Processamento de dados próximo à fonte.</p>
+        </div>
+        <div id="edge" class="modal">
+            <span class="modal-close" onclick="closeModal()">×</span>
+            <img src="../imagens/edgecomputing.png" alt="Edge Computing">
+            <p>
+                Edge computing é um modelo de computação que realiza o processamento de dados próximo à fonte de geração, como sensores ou dispositivos IoT. 
+                Isso reduz a latência e a necessidade de enviar dados para servidores centrais, sendo ideal para aplicações em tempo real, como carros autônomos e monitoramento remoto.
+            </p>
+        </div>
+    </div>
+
+    <script src="../javascript/outros.js"></script>
 </body>
 </html>
+
+

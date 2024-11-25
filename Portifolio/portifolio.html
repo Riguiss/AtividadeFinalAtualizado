@@ -3,10 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="estiloportifolio.css">
 </head>
 <body>
     
+    <a href="../index.html" class="botao">Voltar</a>
+    
+    <header>
+        <h1>Meu Portfólio</h1>
+    </header>
+
+    <!-- Sobre Mim -->
+    <section class="sobre-mim">
+        <div class="foto">
+            <img src="../imagens/eu.png" alt="Minha Foto">
+        </div>
+        <div class="descricao">
+            <h2>Sobre mim</h2>
+            <p>Sou desenvolvedor web tentando sempre criar laços com outros usuários e passar uma experiência boa ao acessar minha página. Com habilidades em HTML, CSS, JavaScript e mais, busco sempre melhorar minhas competências e entregar projetos de qualidade.</p>
+        </div>
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section class="habilidades">
+        <div class="tecnicas">
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+            </ul>
+        </div>
+        <div class="softskills">
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Comunicação</li>
+                <li>Trabalho em equipe</li>
+                <li>Resolução de problemas</li>
+                <li>Adaptabilidade</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projetos">
+        <h2>Meus Projetos</h2>
+        
+        <div class="projeto">
+            <img src="../imagens/projeto1.png" alt="Projeto 1">
+            <div class="projeto-descricao">
+                <h3>Projeto 1</h3>
+                <p>Este é um projeto onde criei um sistema de monitoramento de saúde, com rotinas e exercicios o usúario se organizar.</p>
+            </div>
+        </div>
+
+        <div class="projeto">
+            <img src="../imagens/projeto2.png" alt="Projeto 2">
+            <div class="projeto-descricao">
+                <h3>Projeto 2</h3>
+                <p>Este projeto foi um desenvolvimento de um jogo com parceira na Gualin.Tec. O tema segue o desmatamento florestal e como uma forma de tentar impedir essa ação esse jogo foi criado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensagem-enviada" class="hidden">Mensagem Enviada!</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024, Leonardo Barbosa Cunha</p>
+    </footer>
+
+    <script src="../javascript/portifolio.js"></script>
+
+    
+
 </body>
 </html>
