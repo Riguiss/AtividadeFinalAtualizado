@@ -1,0 +1,14 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+ 
+    body {
+        background: url('https://th.bing.com/th/id/R.8774cfffdab847aad3e5c4e25a28126e?rik=KSf1Xnehu9Ji6A&pid=ImgRaw&r=0') no-repeat center center/cover;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        color: white; /* Ajuste a cor do texto para contrastar com o fundo */
+}
